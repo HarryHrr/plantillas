@@ -1,0 +1,29 @@
+
+
+.img{
+    width: 27rem;
+    height: 25rem;
+    margin: 3rem;
+    background-image: url('./img/foto01.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img:hover::after{
+    transform: translateY(0);
+}
+
+.img::after{
+    content: "Efecto Overlay";
+    font-size: 2rem;
+    color:aqua;
+    background-color: black;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
